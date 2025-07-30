@@ -1,0 +1,425 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Arya Store - FF Cheats
+  </title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #1a202c; /* Tailwind's gray-900 */
+      color: #f7fafc; /* Tailwind's gray-100 */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header, footer {
+      background-color: #2d3748; /* Tailwind's gray-800 */
+      box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+    }
+    a {
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+    nav a {
+      color: #d1d5db; /* Tailwind's gray-300 */
+      font-weight: 600;
+      margin-right: 2rem;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #fff;
+    }
+    button#mobile-menu-button {
+      background: none;
+      border: none;
+      color: #d1d5db;
+      cursor: pointer;
+      font-size: 1.25rem;
+    }
+    button#mobile-menu-button:hover {
+      color: #fff;
+    }
+    #mobile-menu {
+      background-color: #2d3748;
+      padding: 1rem 1.5rem;
+      font-weight: 600;
+      color: #d1d5db;
+      display: none;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    #mobile-menu a {
+      color: #d1d5db;
+    }
+    #mobile-menu a:hover {
+      color: #fff;
+    }
+    main {
+      flex-grow: 1;
+      max-width: 1024px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 2.5rem 1.5rem;
+    }
+    h3 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+    .grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    article {
+      background-color: #2d3748;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.7);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    article:hover {
+      transform: scale(1.05);
+    }
+    article img {
+      border-radius: 0.375rem;
+      margin-bottom: 1rem;
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+    }
+    article h4 {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    article p {
+      color: #a0aec0; /* Tailwind's gray-400 */
+      margin-bottom: 1.5rem;
+    }
+    article p:last-of-type {
+      color: #e2e8f0; /* Tailwind's gray-300 */
+      margin-bottom: 1.5rem;
+    }
+    article a {
+      background-color: #2563eb; /* Tailwind's blue-600 */
+      color: #fff;
+      font-weight: 600;
+      padding: 0.5rem 1.5rem;
+      border-radius: 0.375rem;
+      width: 100%;
+      display: inline-block;
+      text-align: center;
+      transition: background-color 0.3s ease;
+    }
+    article a:hover {
+      background-color: #1d4ed8; /* Tailwind's blue-700 */
+    }
+    article:nth-child(2) a {
+      background-color: #7c3aed; /* Tailwind's purple-600 */
+    }
+    article:nth-child(2) a:hover {
+      background-color: #6b21a8; /* Tailwind's purple-700 */
+    }
+    article:nth-child(3) a {
+      background-color: #ca8a04; /* Tailwind's yellow-600 */
+    }
+    article:nth-child(3) a:hover {
+      background-color: #b45309; /* Tailwind's yellow-700 */
+    }
+    section#donate {
+      max-width: 400px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    section#donate .bg-gray-800 {
+      background-color: #2d3748;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.7);
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      color: #cbd5e1; /* Tailwind's gray-300 */
+    }
+    section#donate i.fas.fa-donate {
+      color: #22c55e; /* Tailwind's green-500 */
+      font-size: 4rem;
+    }
+    section#donate p {
+      font-size: 1.125rem;
+      max-width: 320px;
+      margin: 0 auto;
+    }
+    section#donate a {
+      background-color: #16a34a; /* Tailwind's green-600 */
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.375rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      transition: background-color 0.3s ease;
+      text-decoration: none;
+      justify-content: center;
+    }
+    section#donate a:hover {
+      background-color: #15803d; /* Tailwind's green-700 */
+    }
+    section#donate a i {
+      font-size: 1.25rem;
+    }
+    section#about {
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    section#about p {
+      color: #cbd5e1;
+      font-size: 1.125rem;
+      line-height: 1.6;
+    }
+    section#about img {
+      margin-top: 2rem;
+      border-radius: 0.5rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.7);
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+    }
+    section#contact {
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0 1rem;
+    }
+    section#contact form {
+      background-color: #2d3748;
+      border-radius: 0.5rem;
+      padding: 2rem;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.7);
+    }
+    section#contact label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+    section#contact input,
+    section#contact textarea {
+      width: 100%;
+      background-color: #4a5568; /* Tailwind's gray-700 */
+      border: 1px solid #718096; /* Tailwind's gray-600 */
+      border-radius: 0.375rem;
+      padding: 0.5rem 1rem;
+      color: #f7fafc;
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+      resize: vertical;
+      transition: box-shadow 0.3s ease;
+    }
+    section#contact input:focus,
+    section#contact textarea:focus {
+      outline: none;
+      box-shadow: 0 0 0 3px #3b82f6; /* Tailwind's blue-500 ring */
+      border-color: #3b82f6;
+    }
+    section#contact button {
+      width: 100%;
+      background-color: #2563eb;
+      color: #fff;
+      font-weight: 600;
+      padding: 0.75rem;
+      border-radius: 0.375rem;
+      font-size: 1.125rem;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+    section#contact button:hover {
+      background-color: #1d4ed8;
+    }
+    footer {
+      color: #9ca3af; /* Tailwind's gray-400 */
+      padding: 1.5rem 1.5rem;
+      margin-top: auto;
+    }
+    footer .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    @media (min-width: 768px) {
+      footer .container {
+        flex-direction: row;
+      }
+      nav {
+        margin-right: 0;
+      }
+    }
+    footer p {
+      font-size: 0.875rem;
+    }
+    footer div a {
+      color: #9ca3af;
+      margin-left: 1.5rem;
+      transition: color 0.3s ease;
+    }
+    footer div a:hover {
+      color: #fff;
+    }
+  </style>
+ </head>
+ <body>
+  <header>
+   <div class="container">
+    <div style="display:flex; align-items:center; gap:0.75rem;">
+     <img alt="Arya Store logo with stylized letter A in white on black background" height="48" src="https://storage.googleapis.com/a1aa/image/a163f806-b143-4444-6488-64c0f0fb6175.jpg" width="48" style="border-radius:0.375rem;"/>
+     <h1 style="font-size:1.5rem; font-weight:700; letter-spacing:0.05em; margin:0;">
+      Arya Store
+     </h1>
+    </div>
+    <nav class="desktop-nav" style="display:none;">
+     <a href="#home">Home</a>
+     <a href="#menus">Cheat Menus</a>
+     <a href="#donate">Donate</a>
+     <a href="#about">About</a>
+     <a href="#contact">Contact</a>
+    </nav>
+    <button aria-label="Toggle menu" id="mobile-menu-button" title="Toggle menu">
+     <i class="fas fa-bars"></i>
+    </button>
+   </div>
+   <nav id="mobile-menu">
+    <a href="#home">Home</a>
+    <a href="#menus">Cheat Menus</a>
+    <a href="#donate">Donate</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+   </nav>
+  </header>
+  <main>
+   <section id="menus">
+    <h3>Cheat Menus Created by Arya Dev</h3>
+    <div class="grid">
+     <article>
+      <img alt="Menu 1 icon showing a simple cheat menu interface with 50% range highlight in blue" height="150" src="https://storage.googleapis.com/a1aa/image/f2794328-86bc-4bf1-5053-a220cca6d374.jpg" width="150"/>
+      <h4>Arz v1</h4>
+      <p style="color:#a0aec0; margin-bottom:0.5rem;">Range 50%</p>
+      <p style="color:#e2e8f0; margin-bottom:1.5rem;">Basic cheat menu with 50% range enhancements to improve your gameplay.</p>
+      <a aria-label="Purchase Arz v1 cheat via WhatsApp" href="https://wa.me/6289686617846?text=I%20want%20to%20buy%20Arz%20v1%20cheat%20from%20Arya%20Store" target="_blank" rel="noopener noreferrer" style="background-color:#2563eb;">Buy Now - 10 Thousand Rupiah</a>
+     </article>
+     <article>
+      <img alt="Menu 2 icon showing an advanced cheat menu interface with 80% range highlight in purple" height="150" src="https://storage.googleapis.com/a1aa/image/0c4b4e9e-66ee-42ca-f7a2-b4f6a7869684.jpg" width="150"/>
+      <h4>Arzero premium</h4>
+      <p style="color:#a0aec0; margin-bottom:0.5rem;">Range 80%</p>
+      <p style="color:#e2e8f0; margin-bottom:1.5rem;">Advanced cheat menu with 80% range enhancements for serious players.</p>
+      <a aria-label="Purchase Arzero premium cheat via WhatsApp" href="https://wa.me/6289686617846?text=I%20want%20to%20buy%20Arzero%20premium%20cheat%20from%20Arya%20Store" target="_blank" rel="noopener noreferrer" style="background-color:#7c3aed;">Buy Now - 15 Thousand Rupiah</a>
+     </article>
+     <article>
+      <img alt="Menu 3 icon showing a premium cheat menu interface with 100% range highlight in gold" height="150" src="https://storage.googleapis.com/a1aa/image/6f9c7b1a-cc47-475d-fbba-b0a017ae2f0a.jpg" width="150"/>
+      <h4>Super zero vip</h4>
+      <p style="color:#a0aec0; margin-bottom:0.5rem;">Range 100%</p>
+      <p style="color:#e2e8f0; margin-bottom:1.5rem;">Premium cheat menu with full 100% range enhancements for ultimate domination.</p>
+      <a aria-label="Purchase Super zero vip cheat via WhatsApp" href="https://wa.me/6289686617846?text=I%20want%20to%20buy%20Super%20zero%20vip%20cheat%20from%20Arya%20Store" target="_blank" rel="noopener noreferrer" style="background-color:#ca8a04;">Buy Now - 20 Thousand Rupiah</a>
+     </article>
+    </div>
+   </section>
+   <section id="donate">
+    <h3>Support Arya Dev</h3>
+    <div class="bg-gray-800">
+     <i class="fas fa-donate"></i>
+     <p>If you appreciate the work done by Arya Dev, please consider sending a donation. Your support helps us keep improving and delivering quality cheat menus.</p>
+     <a aria-label="Send donation via WhatsApp to Arya Dev" href="https://wa.me/6289686617846" rel="noopener noreferrer" target="_blank">
+      <i class="fab fa-whatsapp"></i>
+      <span>Donate via WhatsApp: 089686617846</span>
+     </a>
+    </div>
+   </section>
+   <section id="about">
+    <h3>About Arya Store</h3>
+    <p>
+     Arya Store is your premier destination for Free Fire cheats designed to enhance your gameplay and give you the edge you need to win. We provide reliable, tested cheat menus with varying levels of enhancements to suit all players, from beginners to pros. Our products are easy to use, safe, and updated regularly to keep up with game changes.
+    </p>
+    <img alt="Arya Store team of developers working on Free Fire cheat software in a modern office environment with multiple screens and code" height="400" src="https://storage.googleapis.com/a1aa/image/ed7cea5c-c1f4-474b-4176-876b8a123f5d.jpg" width="800"/>
+   </section>
+   <section id="contact">
+    <h3>Contact Us</h3>
+    <form action="#" aria-label="Contact form to reach Arya Store" method="POST">
+     <label for="name">Name</label>
+     <input id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     <label for="email">Email</label>
+     <input id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     <label for="message">Message</label>
+     <textarea id="message" name="message" placeholder="Write your message here" required="" rows="5"></textarea>
+     <button type="submit">Send Message</button>
+    </form>
+   </section>
+  </main>
+  <footer>
+   <div class="container">
+    <p>© 2024 Arya Store. All rights reserved.</p>
+    <div>
+     <a aria-label="Facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i></a>
+     <a aria-label="Twitter" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+     <a aria-label="Instagram" href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   // Show desktop nav on md+ screens
+   function handleResize() {
+     const desktopNav = document.querySelector('nav.desktop-nav');
+     if(window.innerWidth >= 768) {
+       desktopNav.style.display = 'flex';
+       document.getElementById('mobile-menu').style.display = 'none';
+     } else {
+       desktopNav.style.display = 'none';
+     }
+   }
+   window.addEventListener('resize', handleResize);
+   window.addEventListener('load', handleResize);
+
+   const menuButton = document.getElementById('mobile-menu-button');
+   const mobileMenu = document.getElementById('mobile-menu');
+
+   menuButton.addEventListener('click', () => {
+     if(mobileMenu.style.display === 'flex') {
+       mobileMenu.style.display = 'none';
+     } else {
+       mobileMenu.style.display = 'flex';
+       mobileMenu.style.flexDirection = 'column';
+     }
+   });
+  </script>
+ </body>
+</html>
